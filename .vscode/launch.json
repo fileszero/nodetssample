@@ -10,7 +10,6 @@
                 "outFiles": [
                     "${workspaceRoot}/dist/**/*.js"
                 ],
-                "preLaunchTask": "npm: build",
                 "protocol": "inspector"
             }
         ]
