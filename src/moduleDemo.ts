@@ -1,6 +1,6 @@
 import { Hello } from "./module1SimpleModule";
 
-import DefaultExport from "./module2DefaultExport";
+import DefaultExport from "./module2DefaultExport"; // defaultの場合は {} 無し
 
 // module 1 demo
 const hello: Hello = new Hello("world");
