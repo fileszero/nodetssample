@@ -1,14 +1,14 @@
 class Hello {
-    private Target:string;
+    private Target: string;
 
-    constructor(target:string){
-        this.Target=target;
+    constructor(target: string) {
+        this.Target = target;
     }
 
-    public sayHello():void {
+    public sayHello(): void {
         console.log("hello " + this.Target);
     }
 }
 
-const hello:Hello= new Hello("world");
+const hello: Hello = new Hello("world");
 hello.sayHello();
