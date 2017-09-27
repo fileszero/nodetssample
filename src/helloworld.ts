@@ -12,3 +12,7 @@ class Hello {
 
 const hello: Hello = new Hello("world");
 hello.sayHello();
+
+// code runner(ctrl+alt+n) need ts-node
+// https://github.com/TypeStrong/ts-node
+// $>npm install -g ts-node
