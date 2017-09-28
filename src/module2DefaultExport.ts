@@ -5,7 +5,7 @@ export default class DefaultExport {
     private Target: string;
 
     /**
-     * 
+     *
      * @param target the target to say hello.
      */
     constructor(target: string) {
