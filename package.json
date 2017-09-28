@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha ./dist/test/**/*.js",
+    "watch-test": "node node_modules/mocha/bin/mocha ./dist/test/**/*.js --watch ",
     "build": "npm run build-ts && npm run tslint",
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
