@@ -12,7 +12,7 @@
                     "--timeout",
                     "999999",
                     "--colors",
-                    "${workspaceRoot}/dist/test/**/*.js"
+                    "${workspaceRoot}/dest/test/**/*.js"
                 ],
                 "internalConsoleOptions": "openOnSessionStart"
             },
@@ -20,10 +20,10 @@
                 "type": "node",
                 "request": "launch",
                 "name": "Debug",
-                "program": "${workspaceRoot}/dist/src/${fileBasenameNoExtension}.js",
+                "program": "${workspaceRoot}/dest/src/${fileBasenameNoExtension}.js",
                 "smartStep": true,
                 "outFiles": [
-                    "${workspaceRoot}/dist/**/*.js"
+                    "${workspaceRoot}/dest/**/*.js"
                 ],
                 "protocol": "inspector"
             },

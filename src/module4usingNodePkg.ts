@@ -1,7 +1,7 @@
 import * as regression from "regression";
 // regressionは、回帰直線を求めるライブラリ、@typesに登録なし！！！
 // 何もしないと
-// Could not find a declaration file for module 'regression'. 'c:/usr/src/NodeTSSample/node_modules/regression/dist/regression.js' implicitly has an 'any' type.
+// Could not find a declaration file for module 'regression'. 'c:/usr/src/NodeTSSample/node_modules/regression/dest/regression.js' implicitly has an 'any' type.
 // Try `npm install @types/regression` if it exists or add a new declaration (.d.ts) file containing `declare module 'regression';`
 // と怒られます。
 // $ npm install -g dts-gen
