@@ -86,7 +86,17 @@ declare module 'simple-statistics' {
 
     export function kernelDensityEstimation(X: any, kernel: any, bandwidthMethod: any): any;
 
-    export function linearRegression(data: any): any;
+    export class RegressionLine{
+        /**
+         * slope
+         */
+        public m: number;
+        /**
+         * intersect
+         */
+        public b: number;
+    }
+    export function linearRegression(data: Array<Array<number>>): RegressionLine;
 
     export function linearRegressionLine(mb: any): any;
 
