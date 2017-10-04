@@ -23,6 +23,7 @@
     "typescript": "^2.5.3"
   },
   "dependencies": {
-    "regression": "^2.0.0"
+    "regression": "^2.0.0",
+    "simple-statistics": "^5.0.0"
   }
 }
