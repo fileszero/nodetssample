@@ -41,9 +41,9 @@
         "node_modules/*",
         "src/types/*"
       ]
-    },                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    }                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
-    "typeRoots": ["./types","./node_modules/@types"]                      /* List of folders to include type definitions from. */
+    // "typeRoots": ["./types","./node_modules/@types"]                      /* List of folders to include type definitions from. DON'T USE THIS! use baseUrl & paths https://github.com/Microsoft/TypeScript/issues/11137#issuecomment-251755605*/
     // "types": [],                           /* Type declaration files to be included in compilation. */
     // "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
 
