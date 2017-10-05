@@ -5,6 +5,7 @@ import DefaultExport from "./module2DefaultExport"; // defaultの場合は {} �
 import * as Mod3 from "./module3MultiExport";   // 複数Exportの一括読み込み
 import { Mod3Sub3 } from "./module3MultiExport";   // 複数Exportの部分読み込み
 
+import * as Mod5 from "./module5folder";    // フォルダーなモジュール
 // module 1 demo
 const hello: Hello = new Hello("world");
 hello.sayHello();
@@ -23,6 +24,10 @@ mod3sub3.Yo();
 
 const mod3sub3_2 = new Mod3Sub3();
 mod3sub3_2.Yo();
+
+Mod5.Func(1);
+Mod5.Func(Mod5.mod5Status.Active);
+Mod5.sub2.Func(Mod5.mod5Status.Stop);
 
 process.kill(process.pid);  // it's need for VS code debugger
 
