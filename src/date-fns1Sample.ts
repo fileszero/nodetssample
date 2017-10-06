@@ -1,7 +1,7 @@
-import * as datefns from "date-fns";
+import * as df from "date-fns";
 
 const now = new Date();
-const start = datefns.startOfDay( now );
+const start = df.startOfDay( now );
 
 console.log(start);
-console.log(datefns.format(start, "YYYYMMDD HHmmss"));
+console.log(df.format(start, "YYYYMMDD HHmmss"));
