@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha ./dest/test/**/*.js",
+    "jest": "jest",
     "watch-test": "node node_modules/mocha/bin/mocha ./dest/test/**/*.js --watch ",
     "build": "npm run build-ts && npm run tslint",
     "build-ts": "tsc",
@@ -17,9 +18,9 @@
   "devDependencies": {
     "@types/assert": "0.0.31",
     "@types/date-fns": "^2.6.0",
-    "@types/mocha": "^2.2.43",
+    "@types/jest": "^21.1.2",
     "@types/node": "^8.0.31",
-    "mocha": "^3.5.3",
+    "jest": "^21.2.1",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3"
   },
