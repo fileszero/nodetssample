@@ -14,5 +14,12 @@ namespace instancingTest {
             expect(some.field1).toBe(-1);
             expect(some.field2).toBe("some");
         });
+        test("join fields", () => {
+            const some: SomeRecord = new SomeRecord({ field1: 1, field2: "some" });
+            expect(some.field1).toBe(1);
+            expect(some.field2).toBe("some");
+            expect(some.joinFields()).toBe("1 some");
+        });
+
     });
 }

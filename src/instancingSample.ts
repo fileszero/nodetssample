@@ -7,6 +7,13 @@ export class SomeRecord {
     public field1: number;
     public field2: string;
 
+    public joinFields(): string {
+        if (this.field1 == -1) {
+            return this.field2;
+        }
+        return this.field1 + " " + this.field2;
+    }
+
 }
 
 const somearray: SomeRecord[] = [
