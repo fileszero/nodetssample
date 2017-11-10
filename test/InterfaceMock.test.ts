@@ -4,7 +4,8 @@ namespace InterfaceMock {
     test("interface mock", () => {
         // const SampleImpl = jest.fn<ISample>(() => ({ somefunc: jest.fn() }));
         const SampleImpl = jest.fn<ISample>(() => {
-            return { somefunc: jest.fn() };
+            const impl: ISample = { somefunc: jest.fn() };
+            return impl;
         });
         const sampleInst = new SampleImpl();
 
@@ -13,4 +14,6 @@ namespace InterfaceMock {
 
         expect(sampleInst.somefunc).toHaveBeenCalled();
     });
+
+
 }
