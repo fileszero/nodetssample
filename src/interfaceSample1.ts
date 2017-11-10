@@ -1,5 +1,7 @@
 export interface ISample {
     somefunc(): void;
+    intFunc(): number;
+    inc(): number;
 }
 
 export class ServiceSample {
@@ -8,7 +10,12 @@ export class ServiceSample {
         this.mSample = sample;
     }
 
-    public DoSomething() {
+    public DoSomething(): number {
         this.mSample.somefunc();
+        return this.mSample.intFunc();
+    }
+
+    public Inclement(): number {
+        return this.mSample.inc();
     }
 }
