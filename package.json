@@ -1,12 +1,10 @@
 {
-  "name": "NodeTSSample",
+  "name": "nodetssample",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha ./dest/test/**/*.js",
-    "jest": "jest",
-    "watch-test": "node node_modules/mocha/bin/mocha ./dest/test/**/*.js --watch ",
+    "jest": "jest -i",
     "build": "npm run build-ts && npm run tslint",
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
