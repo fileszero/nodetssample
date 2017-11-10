@@ -20,6 +20,6 @@ export class ServiceSample {
     }
 
     public NoTestedMethod(): string {
-        return "Not tested!";
+        return "Not tested!!";
     }
 }
