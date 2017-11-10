@@ -18,4 +18,8 @@ export class ServiceSample {
     public Inclement(): number {
         return this.mSample.inc();
     }
+
+    public NoTestedMethod(): string {
+        return "Not tested!";
+    }
 }
