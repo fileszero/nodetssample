@@ -1,7 +1,7 @@
 namespace multiAsyncLoop {
     async function delay(mag: string, shouldBeResolv: boolean, wait_ms: number): Promise<string> {
         return new Promise<string>((resolv, reject) => {
-            if (wait_ms == 509) {
+            if (wait_ms == 59) {
                 console.log(mag + " Some Error");
                 throw mag + " Some Error";
             }
@@ -18,19 +18,19 @@ namespace multiAsyncLoop {
     }
 
     async function loop1() {
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < 1500; i++) {
             try {
-                await delay("loop1", true, 500 + i).catch((reason) => {
-                    console.log("catch:" + reason);
-                });
+                await delay("loop1", true, 50 + i);
             } catch (ex) {
-                console.log("Error:" + ex);
+                for (let e = 0; e < 10; e++) {
+                    console.log("Error:" + ex);
+                }
             }
         }
     }
     async function loop2() {
         while (true) {
-            await delay("loop2", true, 1500);
+            await delay("loop2", true, 150);
         }
     }
 
